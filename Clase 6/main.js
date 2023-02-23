@@ -36,14 +36,70 @@
 // const varios =   mascotas.concat(nombres); //combinar dos arreglos en uno único
 // console.log(varios);
 
-const nombres = ["camila", "andres", "sofia", "alejandra", "fabian", "camila"];
-const copia = nombres.slice(1, 4); //realiza una copia de un fragmento del arreglo
-console.log(copia);
+// const nombres = ["camila", "andres", "sofia", "alejandra", "fabian", "camila"];
+// const copia = nombres.slice(1, 4); //realiza una copia de un fragmento del arreglo
+// console.log(copia);
 
-console.log(nombres.indexOf("camila")); //devuelve la posicion del elemento
-console.log(nombres.indexOf("lucas"));
-console.log(nombres.includes("andres")); // dice si el elemento existe o no existe
-console.log(nombres.includes("lucas"));
+// console.log(nombres.indexOf("camila")); //devuelve la posicion del elemento
+// console.log(nombres.indexOf("lucas"));
+// console.log(nombres.includes("andres")); // dice si el elemento existe o no existe
+// console.log(nombres.includes("lucas"));
 
-nombres.reverse(); //invierte el orden de los elementos del arreglo
-console.log(nombres);
+// nombres.reverse(); //invierte el orden de los elementos del arreglo
+// console.log(nombres);
+
+// const nombres = ["camila", "andres", "sofia", "alejandra", "fabian", "camila"];
+
+// const eliminar = (nombre) => {
+//   let index = nombres.indexOf(nombre);
+
+//   if (index != -1) {
+//     nombres.splice(index, 1);
+//     console.log(nombres);
+//   }
+// };
+
+// eliminar("sofia");
+
+// const arreglo = [];
+// const objeto = {
+//   nombre: "mariana",
+//   edad: 26,
+// };
+
+// arreglo.push(objeto);
+// console.log(arreglo);
+
+// arreglo.push({ nombre: "andres", edad: 26 });
+// console.log(arreglo);
+
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "pantalon", precio: 700 },
+//   { id: 3, nombre: "correa", precio: 850 },
+//   { id: 4, nombre: "zapato", precio: 1350 },
+// ];
+
+// for(const producto of productos){
+//   console.log(producto.id);
+//   console.log(producto.nombre);
+// }
+
+const productos = [
+  { id: 1, nombre: "camisa", precio: 1000 },
+  { id: 2, nombre: "pantalon", precio: 700 },
+  { id: 3, nombre: "correa", precio: 850 },
+  { id: 4, nombre: "zapato", precio: 1350 },
+];
+
+let nombre = prompt("Ingrese el nombre del producto");
+let precio = prompt("Ingrese el precio del producto");
+
+let producto = {
+  id: productos.length + 1,
+  nombre,
+  precio,
+};
+
+productos.push(producto);
+console.log(productos);
