@@ -85,21 +85,33 @@
 //   console.log(producto.nombre);
 // }
 
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "pantalon", precio: 700 },
+//   { id: 3, nombre: "correa", precio: 850 },
+//   { id: 4, nombre: "zapato", precio: 1350 },
+// ];
+
+// let nombre = prompt("Ingrese el nombre del producto");
+// let precio = prompt("Ingrese el precio del producto");
+
+// let producto = {
+//   id: productos.length + 1,
+//   nombre,
+//   precio,
+// };
+
+// productos.push(producto);
+// console.log(productos);
+
 const productos = [
   { id: 1, nombre: "camisa", precio: 1000 },
   { id: 2, nombre: "pantalon", precio: 700 },
   { id: 3, nombre: "correa", precio: 850 },
   { id: 4, nombre: "zapato", precio: 1350 },
 ];
-
-let nombre = prompt("Ingrese el nombre del producto");
-let precio = prompt("Ingrese el precio del producto");
-
-let producto = {
-  id: productos.length + 1,
-  nombre,
-  precio,
-};
-
-productos.push(producto);
-console.log(productos);
+for (const producto of productos) {
+  console.log(producto);
+  console.log(producto.id);
+  console.log(producto.nombre);
+}
