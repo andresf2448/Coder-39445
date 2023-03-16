@@ -141,11 +141,12 @@ const productos = [
 ];
 
 const agregarProducto = (id) => {
-  let producto = productos.find(item => item.id === id);
+  let producto = productos.find((item) => item.id === id);
   console.log(producto);
 };
 productos.forEach((producto) => {
   let div = document.createElement("div");
+
   div.innerHTML = `
     <h2>Id: ${producto.id}</h2>
     <p>Nombre: ${producto.producto}</p>
@@ -154,6 +155,7 @@ productos.forEach((producto) => {
   `;
 
   contenedor.append(div);
+
   let boton = document.getElementById(`boton${producto.id}`);
   boton.addEventListener("click", () => agregarProducto(producto.id));
 });
